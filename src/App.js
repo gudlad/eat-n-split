@@ -166,7 +166,7 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
   const [bill, setBill] = useState("");
   const [paidByUser, setPaidByUser] = useState("");
   const paidByFriend = bill ? bill - paidByUser : "";
-  const [whoIsPaying, setWhoIsPaying] = useState("");
+  const [whoIsPaying, setWhoIsPaying] = useState("user");
 
   function handleSubmit(event) {
     event.preventDefault();
