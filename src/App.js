@@ -59,6 +59,7 @@ export default function App() {
           : friend
       )
     );
+    setSelectedFriends(null);
   }
 
   return (
@@ -76,6 +77,7 @@ export default function App() {
       </div>
       {selectedFriends && (
         <FormSplitBill
+          key={selectedFriends.id}
           selectedFriend={selectedFriends}
           onSplitBill={handleSplitBill}
         />
